@@ -1,12 +1,13 @@
 name: my second workflow file
 
-on: assigned
+on: push
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print logs
-      run: echo "printing logs....."
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print logs
+        run: echo "printing logs....."
 
 
 
