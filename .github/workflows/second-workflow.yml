@@ -1,6 +1,6 @@
 name: my second workflow file
 
-on: push
+on: assigned
 
 jobs:
   runs-on: ubuntu-latest
