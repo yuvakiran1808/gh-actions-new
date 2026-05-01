@@ -1,7 +1,8 @@
 name: my second workflow file
 
 on:
-  branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   build:
