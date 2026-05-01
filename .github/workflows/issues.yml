@@ -3,8 +3,8 @@ name: Handle issues
 on: issues
 
 jobs:
-  runs-on: ubuntu-latest
   display-output:
+    runs-on: ubuntu-latest
     steps:
-      - name: printing event details
-        runs: echo "${{ toJSON(github.event) }}"
+        - name: printing event details
+          runs: echo "${{ toJSON(github.event) }}"
