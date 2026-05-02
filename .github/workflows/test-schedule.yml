@@ -2,7 +2,7 @@ name: Testing schedule
 
 on:
   schedule:
-   - cron: 15 * * * *
+   - cron: 1 * * * *
 
 jobs:
    print-output:
@@ -10,4 +10,4 @@ jobs:
       steps:
       - name: printing the schedule
         run: echo "Printing the schedule..."
-        
+
