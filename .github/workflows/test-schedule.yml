@@ -1,0 +1,13 @@
+name: Testing schedule
+
+on:
+  schedule:
+   - cron: 15 * * * *
+
+jobs:
+   print-output:
+      runs-on: ubuntu-latest
+      steps:
+      - name: printing the schedule
+        run: echo "Printing the schedule..."
+        
