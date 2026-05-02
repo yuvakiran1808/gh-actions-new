@@ -2,12 +2,12 @@ name: Testing schedule
 
 on:
   schedule:
-   - cron: 1 * * * *
+   - cron: "*/5 * * * *"
 
 jobs:
    print-output:
       runs-on: ubuntu-latest
       steps:
       - name: printing the schedule
-        run: echo "Printing the schedule..."
+        run: echo "Printing the schedule... ${{ github.event.schedule }}"
 
